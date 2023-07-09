@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Value Converter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Value Converter</h1>
+  <h1 style="color: red">please don't fill in more than one input box at a time! the website will break</h1>
+  
+  <div class="converter">
+    <label for="money">Money:</label>
+    <input type="number" id="money" min="0" step="any">
+    
+    <label for="gems">Gems:</label>
+    <input type="number" id="gems" min="0" step="any">
+    
+    <label for="research">Research Points:</label>
+    <input type="number" id="research" min="0" step="any">
+    
+    <button onclick="convertValues()">Convert</button>
+  </div>
+  
+  <div id="result"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
